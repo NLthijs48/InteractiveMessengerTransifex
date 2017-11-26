@@ -56,7 +56,7 @@
     </dependencies>
 
     <build>
-        <finalName>AreaShopTransifex</finalName>
+        <finalName>InteractiveMessengerTransifex</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

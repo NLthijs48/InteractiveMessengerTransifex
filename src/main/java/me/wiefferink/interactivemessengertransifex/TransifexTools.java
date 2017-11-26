@@ -6,8 +6,8 @@ public class TransifexTools {
 
 	public static final String help =
 			"help\n"+
-			"format <in> <out> <languagecode>\n"+
 			"download <token> <project> <resource> <output>\n" +
+			"formatForUpload <in> <out> <languagecode>\n" +
 			"upload <token> <project> <resource> <file>";
 
 	public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class TransifexTools {
 		boolean result = true;
 		if("help".equalsIgnoreCase(args[0])) {
 			Log.info(help);
-		} else if("format".equalsIgnoreCase(args[0])) {
+		} else if("formatForUpload".equalsIgnoreCase(args[0])) {
 			result = FormatForUpload.run(commandArgs);
 		} else if("download".equalsIgnoreCase(args[0])) {
 			result = Download.run(commandArgs);
