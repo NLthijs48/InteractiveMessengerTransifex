@@ -1,14 +1,18 @@
 package me.wiefferink.interactivemessengertransifex;
 
 import me.wiefferink.interactivemessenger.Log;
+import org.apache.commons.lang.StringUtils;
+
+import java.util.Arrays;
 
 public class TransifexTools {
 
-	public static final String help =
-			"help\n"+
-			"download <token> <project> <resource> <output>\n" +
-			"formatForUpload <in> <out> <languagecode>\n" +
-			"upload <token> <project> <resource> <file>";
+	public static final String help = StringUtils.join(Arrays.asList(
+			"help",
+			Download.help,
+			FormatForUpload.help,
+			Upload.help
+	), "\n");
 
 	public static void main(String[] args) {
 		if(args.length == 0) {

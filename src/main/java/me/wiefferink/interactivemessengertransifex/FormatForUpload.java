@@ -75,7 +75,7 @@ public class FormatForUpload {
 							combined.append("\n");
 						}
 
-						// Replace indentation with tabs, Transifix gets rid of spaces otherwise (this assumes 4 spaces for a tab)
+						// Replace indentation with tabs, Transifex gets rid of spaces otherwise (this assumes 4 spaces for a tab)
 						while(doing.startsWith("    ")) {
 							doing = "\t"+doing.substring(4);
 						}
